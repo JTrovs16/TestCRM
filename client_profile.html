@@ -1,30 +1,32 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Client Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Client Profile</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Client Profile Intake</h1>
-        <form>
-            <label>First Name:</label><input type="text" name="first_name"><br>
-            <label>Last Name:</label><input type="text" name="last_name"><br>
-            <label>Highest Level of Education:</label><input type="text" name="education"><br>
-            <label>Job Goal:</label><input type="text" name="job_goal"><br>
-            <label>Stream (A, B, C):</label><input type="text" name="stream"><br>
-            <label>Transportation Available?</label><input type="text" name="transportation"><br>
-            <label>Availability (e.g. full-time, part-time):</label><input type="text" name="availability"><br>
-            <label>Language/Literacy Barriers:</label><input type="text" name="language_barriers"><br>
-            <label>Comfort with Computers:</label><input type="text" name="digital_comfort"><br>
-            <label>Work Preferences:</label><input type="text" name="preferences"><br>
-            <label>Employment Gap Explanation:</label><input type="text" name="gap"><br>
-            <label>In Employment Programs?</label><input type="text" name="programs"><br>
-            <label>Additional Notes:</label><textarea name="additional_notes"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+  <div class="sidebar">
+    <a href="index.html">Dashboard</a>
+    <a href="client_profile.html">Client Profile</a>
+    <a href="employment_action_plan.html">Employment Action Plan</a>
+    <a href="client_supports.html">Client Supports & Rationale</a>
+    <a href="placements.html">Placements & Rationale</a>
+  </div>
+  <div class="main">
+    <h2>Client Profile</h2>
+    <form id="clientProfileForm">
+      <input type="text" placeholder="First Name" id="firstName" required />
+      <input type="text" placeholder="Last Name" id="lastName" required />
+      <button type="submit">Create Employment Action Plan</button>
+    </form>
+    <p id="confirmationMessage" style="color: green;"></p>
+    <script>
+      document.getElementById('clientProfileForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const fname = document.getElementById('firstName').value;
+        document.getElementById('confirmationMessage').textContent = "Employment Action Plan for " + fname + " successfully created!";
+      });
+    </script>
+  </div>
 </body>
 </html>
