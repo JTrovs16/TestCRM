@@ -1,0 +1,1 @@
+// JS for nav, greeting, and dynamic content
