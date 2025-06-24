@@ -1,15 +1,30 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Client Profile Page</title>
+    <meta charset="UTF-8">
+    <title>Client Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="main">
-    <h1>Client Profile Page</h1>
-    <p>This feature is coming soon.</p>
-    <p><a href="index.html">← Back to Dashboard</a></p>
-</div>
+    <div class="container">
+        <h1>Client Profile Intake</h1>
+        <form>
+            <label>First Name:</label><input type="text" name="first_name"><br>
+            <label>Last Name:</label><input type="text" name="last_name"><br>
+            <label>Highest Level of Education:</label><input type="text" name="education"><br>
+            <label>Job Goal:</label><input type="text" name="job_goal"><br>
+            <label>Stream (A, B, C):</label><input type="text" name="stream"><br>
+            <label>Transportation Available?</label><input type="text" name="transportation"><br>
+            <label>Availability (e.g. full-time, part-time):</label><input type="text" name="availability"><br>
+            <label>Language/Literacy Barriers:</label><input type="text" name="language_barriers"><br>
+            <label>Comfort with Computers:</label><input type="text" name="digital_comfort"><br>
+            <label>Work Preferences:</label><input type="text" name="preferences"><br>
+            <label>Employment Gap Explanation:</label><input type="text" name="gap"><br>
+            <label>In Employment Programs?</label><input type="text" name="programs"><br>
+            <label>Additional Notes:</label><textarea name="additional_notes"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
