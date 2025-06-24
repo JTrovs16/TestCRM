@@ -1,0 +1,1 @@
+// Time-based greeting logic and navigation handling
