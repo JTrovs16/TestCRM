@@ -1,41 +1,42 @@
 
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f6fa;
-    color: #2f3640;
+    padding: 20px;
 }
-
-.sidebar {
-    width: 250px;
-    background-color: #dcdde1;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding-top: 30px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-
-.sidebar button {
-    display: block;
-    width: 80%;
-    margin: 15px auto;
-    padding: 15px;
-    background-color: #7f8fa6;
-    border: none;
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #2c3e50;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #3498db;
     color: white;
-    font-size: 16px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
-
-.sidebar button:hover {
-    background-color: #718093;
-}
-
-.main {
-    margin-left: 270px;
-    padding: 40px;
+button:hover {
+    background-color: #2980b9;
 }
