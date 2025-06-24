@@ -1,13 +1,23 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>AI ATS Prototype</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Main Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>AI ATS Prototype</h1>
-    <p>This prototype supports resume matching, client intake, EAP suggestions, and training recommendations.</p>
-    <script src="script.js"></script>
+<div class="sidebar">
+    <button onclick="location.href='client_profile.html'">Client Profile</button>
+    <button onclick="location.href='employment_action_plan.html'">Employment Action Plan</button>
+    <button onclick="location.href='client_supports_rationale.html'">Client Supports & Rationale</button>
+    <button onclick="location.href='placements_rationale.html'">Placements & Rationale</button>
+    <button onclick="location.href='employers.html'">Employers</button>
+    <button onclick="location.href='resume_job_match.html'">Resume Upload & Job Match</button>
+    <button onclick="location.href='motivational_interviewing.html'">Motivational Interviewing</button>
+</div>
+<div class="main">
+    <h1>Welcome to the AI Employment Consultant Dashboard</h1>
+    <p>Select a tool from the sidebar to begin.</p>
+</div>
 </body>
 </html>
